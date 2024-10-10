@@ -8,10 +8,10 @@ from .models import TickerModel
 import pandas as pd
 import requests
 import json
-from vnstock3.core.utils.parser import get_asset_type
-from vnstock3.core.utils.logger import get_logger
-from vnstock3.core.utils.env import get_hosting_service
-from vnstock3.core.utils.user_agent import get_headers
+from core.utils.parser import get_asset_type
+from core.utils.logger import get_logger
+from core.utils.env import get_hosting_service
+from core.utils.user_agent import get_headers
 
 logger = get_logger(__name__)
 

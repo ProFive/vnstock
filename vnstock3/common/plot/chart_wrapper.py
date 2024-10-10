@@ -2,7 +2,7 @@
 
 import pandas as pd
 from vnstock_ezchart.mplot import MPlot, Utils
-from vnstock3.core.utils.logger import get_logger
+from core.utils.logger import get_logger
 
 logger = get_logger(__name__)
 

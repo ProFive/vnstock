@@ -5,11 +5,11 @@ import pandas as pd
 import requests
 from datetime import datetime
 from typing import Optional, Dict
-from vnstock3.core.utils.logger import get_logger
-from vnstock3.core.utils.user_agent import get_headers
-from vnstock3.explorer.msn.helper import msn_apikey
-from vnstock3.explorer.msn.helper import get_asset_type
-from vnstock3.explorer.msn.listing import Listing
+from core.utils.logger import get_logger
+from core.utils.user_agent import get_headers
+from explorer.msn.helper import msn_apikey
+from explorer.msn.helper import get_asset_type
+from explorer.msn.listing import Listing
 from .const import _BASE_URL, _RESAMPLE_MAP, _OHLC_MAP, _OHLC_DTYPE
 from .models import TickerModel
 

@@ -3,10 +3,10 @@ import json
 import requests
 from typing import Optional
 from .const import _BASE_URL, _GRAPHQL_URL, _FINANCIAL_REPORT_PERIOD_MAP, _UNIT_MAP
-from vnstock3.core.utils.parser import get_asset_type, camel_to_snake
-from vnstock3.core.utils.logger import get_logger
-from vnstock3.core.utils.user_agent import get_headers
-# from vnstock3.explorer.vci.financial import Finance
+from core.utils.parser import get_asset_type, camel_to_snake
+from core.utils.logger import get_logger
+from core.utils.user_agent import get_headers
+# from explorer.vci.financial import Finance
 
 logger = get_logger(__name__)
 

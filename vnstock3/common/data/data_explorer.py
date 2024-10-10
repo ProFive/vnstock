@@ -1,9 +1,9 @@
 import pandas as pd
 import importlib
 from typing import Optional
-from vnstock3.core.utils.logger import get_logger
-from vnstock3.explorer.msn.const import _CURRENCY_ID_MAP, _GLOBAL_INDICES, _CRYPTO_ID_MAP
-from vnstock3.core.utils.parser import get_asset_type
+from core.utils.logger import get_logger
+from explorer.msn.const import _CURRENCY_ID_MAP, _GLOBAL_INDICES, _CRYPTO_ID_MAP
+from core.utils.parser import get_asset_type
 # from functools import wraps
 
 logger = get_logger(__name__)
@@ -77,7 +77,7 @@ class Quote:
         if self.source not in self.SUPPORTED_SOURCES:
             raise ValueError(f"Hiện tại chỉ có nguồn dữ liệu từ {', '.join(self.SUPPORTED_SOURCES)} được hỗ trợ.")
         self.symbol = symbol.upper()
-        self.source_module = f"vnstock3.explorer.{source.lower()}"
+        self.source_module = f"explorer.{source.lower()}"
         self.data_source = self._load_data_source()
 
     def _load_data_source(self):
@@ -149,7 +149,7 @@ class Listing:
         self.source = source.upper()
         if self.source not in self.SUPPORTED_SOURCES:
             raise ValueError(f"Hiện tại chỉ có nguồn dữ liệu từ {', '.join(self.SUPPORTED_SOURCES)} được hỗ trợ.")
-        self.source_module = f"vnstock3.explorer.{self.source.lower()}"
+        self.source_module = f"explorer.{self.source.lower()}"
         self.data_source = self._load_data_source()
 
     def _load_data_source(self):
@@ -226,7 +226,7 @@ class Trading:
         self.source = source.upper()
         if self.source not in self.SUPPORTED_SOURCES:
             raise ValueError(f"Hiện tại chỉ có nguồn dữ liệu từ {', '.join(self.SUPPORTED_SOURCES)} được hỗ trợ.")
-        self.source_module = f"vnstock3.explorer.{source.lower()}"
+        self.source_module = f"explorer.{source.lower()}"
         self.data_source = self._load_data_source()
 
     def _load_data_source(self):
@@ -262,7 +262,7 @@ class Company:
         # validate the source to only VCI are available so far
         if source.upper() not in ["TCBS"]:
             raise ValueError("Hiện tại chỉ có nguồn dữ liệu từ TCBS được hỗ trợ.")
-        self.source_module = f"vnstock3.explorer.{source.lower()}"
+        self.source_module = f"explorer.{source.lower()}"
         self.data_source = self._load_data_source()
 
     def _load_data_source(self):
@@ -347,7 +347,7 @@ class Finance:
         self.source = source.upper()
         if self.source not in self.SUPPORTED_SOURCES:
             raise ValueError(f"Hiện tại chỉ có nguồn dữ liệu từ {', '.join(self.SUPPORTED_SOURCES)} được hỗ trợ thông tin báo cáo tài chính.")
-        self.source_module = f"vnstock3.explorer.{self.source.lower()}"
+        self.source_module = f"explorer.{self.source.lower()}"
         self.data_source = self._load_data_source()
 
     def _load_data_source(self):
@@ -400,7 +400,7 @@ class Fund:
         if self.source not in self.supported_sources:
             raise ValueError(f"Hiện tại chỉ có nguồn dữ liệu từ {', '.join(self.supported_sources)} được hỗ trợ.")
         self.random_agent = random_agent
-        self.source_module = f"vnstock3.explorer.{source.lower()}"
+        self.source_module = f"explorer.{source.lower()}"
         self.data_source = self._load_data_source(random_agent)
         self.details = self.data_source.details
 

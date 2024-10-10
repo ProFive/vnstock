@@ -1,8 +1,8 @@
 import importlib
 from typing import Optional
-from vnstock3.core.utils.logger import get_logger
-from vnstock3.common.data.data_explorer import StockComponents, MSNComponents, Fund
-from vnstock3.explorer.msn.const import _CURRENCY_ID_MAP, _GLOBAL_INDICES, _CRYPTO_ID_MAP
+from core.utils.logger import get_logger
+from common.data.data_explorer import StockComponents, MSNComponents, Fund
+from explorer.msn.const import _CURRENCY_ID_MAP, _GLOBAL_INDICES, _CRYPTO_ID_MAP
 
 logger = get_logger(__name__)
 

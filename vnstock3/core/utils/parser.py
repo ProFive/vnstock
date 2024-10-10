@@ -2,7 +2,7 @@ import re
 from typing import Dict
 from datetime import datetime, timedelta
 from pytz import timezone
-from vnstock3.core.config.const import UA
+from core.config.const import UA
 
 def parse_timestamp(time_value):
     """

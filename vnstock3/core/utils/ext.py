@@ -11,7 +11,7 @@ def load_extensions(target_instance, module_name, function_names):
         - function_names: A list of function names as strings that should be imported and bound.
     Usage:
     ```
-    from vnstock3.core.utils.ext import load_extensions
+    from core.utils.ext import load_extensions
 
     class Trading:
         def __init__(self, symbol):

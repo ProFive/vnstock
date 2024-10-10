@@ -6,9 +6,9 @@ from datetime import datetime
 from .const import _GROUP_CODE
 import pandas as pd
 import requests
-from vnstock3.core.utils.parser import camel_to_snake
-from vnstock3.core.utils.logger import get_logger
-from vnstock3.core.utils.user_agent import get_headers
+from core.utils.parser import camel_to_snake
+from core.utils.logger import get_logger
+from core.utils.user_agent import get_headers
 
 logger = get_logger(__name__)
 

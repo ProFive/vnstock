@@ -1,4 +1,4 @@
-from vnstock3.core.config.const import ID_DIR
+from core.config.const import ID_DIR
 import sys
 import json
 import os

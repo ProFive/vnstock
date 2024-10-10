@@ -5,9 +5,9 @@ import pandas as pd
 import requests
 from datetime import datetime
 from typing import Optional, Dict
-from vnstock3.core.utils.parser import get_asset_type
-from vnstock3.core.utils.logger import get_logger
-from vnstock3.core.utils.user_agent import get_headers
+from core.utils.parser import get_asset_type
+from core.utils.logger import get_logger
+from core.utils.user_agent import get_headers
 from .models import TickerModel
 from .const import _BASE_URL, _STOCKS_URL, _FUTURE_URL, _INTERVAL_MAP, _OHLC_MAP, _OHLC_DTYPE, _INTRADAY_MAP, _INTRADAY_DTYPE
 

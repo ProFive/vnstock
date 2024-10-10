@@ -5,9 +5,9 @@ from typing import Optional
 from .const import _BASE_URL, _STOCKS_URL, _PRICE_BOARD_COLS_MAP, _PRICE_BOARD_STD_COLS, _PRICE_BOARD_EXT_COLS
 import pandas as pd
 import requests
-from vnstock3.core.utils.parser import get_asset_type
-from vnstock3.core.utils.logger import get_logger
-from vnstock3.core.utils.user_agent import get_headers
+from core.utils.parser import get_asset_type
+from core.utils.logger import get_logger
+from core.utils.user_agent import get_headers
 
 logger = get_logger(__name__)
 

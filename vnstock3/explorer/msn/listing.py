@@ -5,11 +5,11 @@ from datetime import datetime
 import pandas as pd
 import requests
 import json
-# from vnstock3.core.utils.parser import camel_to_snake
-from vnstock3.core.utils.logger import get_logger
-from vnstock3.core.utils.user_agent import get_headers
-from vnstock3.explorer.msn.helper import msn_apikey
-from vnstock3.explorer.msn.const import _SYMBOL_INDEX_COLS_MAP
+# from core.utils.parser import camel_to_snake
+from core.utils.logger import get_logger
+from core.utils.user_agent import get_headers
+from explorer.msn.helper import msn_apikey
+from explorer.msn.const import _SYMBOL_INDEX_COLS_MAP
 
 logger = get_logger(__name__)
 

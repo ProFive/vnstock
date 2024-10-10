@@ -1,8 +1,8 @@
 import requests
 from datetime import datetime, timedelta
-from vnstock3.core.utils.user_agent import get_headers
-from vnstock3.explorer.msn.const import _CURRENCY_ID_MAP, _CRYPTO_ID_MAP, _GLOBAL_INDICES
-from vnstock3.core.utils.logger import get_logger
+from core.utils.user_agent import get_headers
+from explorer.msn.const import _CURRENCY_ID_MAP, _CRYPTO_ID_MAP, _GLOBAL_INDICES
+from core.utils.logger import get_logger
 
 logger = get_logger(__name__)
 

@@ -7,9 +7,9 @@ import pandas as pd
 from pandas import json_normalize
 from typing import Union, List
 from datetime import datetime
-from vnstock3.explorer.fmarket.const import _BASE_URL, _FUND_TYPE_MAPPING, _FUND_LIST_COLUMNS, _FUND_LIST_MAPPING
-from vnstock3.core.utils.logger import get_logger
-from vnstock3.core.utils.user_agent import get_headers
+from explorer.fmarket.const import _BASE_URL, _FUND_TYPE_MAPPING, _FUND_LIST_COLUMNS, _FUND_LIST_MAPPING
+from core.utils.logger import get_logger
+from core.utils.user_agent import get_headers
 
 def convert_unix_to_datetime(df_to_convert: pd.DataFrame, columns: List[str]) -> pd.DataFrame:
     """Converts all the specified columns of a dataframe to date format and fill NaN for negative values."""

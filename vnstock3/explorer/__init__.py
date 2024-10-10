@@ -1,3 +1,3 @@
-from vnstock3.core.utils.env import id_valid
+from core.utils.env import id_valid
 
 id_valid()

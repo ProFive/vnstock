@@ -3,9 +3,9 @@ import pandas as pd
 from pandas import json_normalize
 import requests
 from typing import Optional
-from vnstock3.core.utils.parser import get_asset_type, camel_to_snake
-from vnstock3.core.utils.logger import get_logger
-from vnstock3.core.utils.user_agent import get_headers
+from core.utils.parser import get_asset_type, camel_to_snake
+from core.utils.logger import get_logger
+from core.utils.user_agent import get_headers
 from .const import _BASE_URL, _ANALYSIS_URL, _FINANCIAL_REPORT_MAP, _FINANCIAL_REPORT_PERIOD_MAP
 
 logger = get_logger(__name__)

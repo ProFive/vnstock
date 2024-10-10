@@ -1,7 +1,7 @@
 import requests
 import json
 from typing import Union, Dict
-from vnstock3.core.utils.env import get_path_delimiter
+from core.utils.env import get_path_delimiter
 
 class Messenger:
     def __init__(self, platform:str, channel:Union[str, None], token_key:Union[str, int]):

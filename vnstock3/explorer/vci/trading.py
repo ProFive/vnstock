@@ -6,9 +6,9 @@ from .const import _BASE_URL
 import pandas as pd
 import requests
 import json
-from vnstock3.core.utils.parser import get_asset_type, camel_to_snake, flatten_data
-from vnstock3.core.utils.logger import get_logger
-from vnstock3.core.utils.user_agent import get_headers
+from core.utils.parser import get_asset_type, camel_to_snake, flatten_data
+from core.utils.logger import get_logger
+from core.utils.user_agent import get_headers
 
 logger = get_logger(__name__)
 
